@@ -1,0 +1,81 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    background-color: #e7ecef;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+main {
+    flex: 1; /* Takes up all available space */
+}
+.navbar {
+    background-color: #274c77 ;
+}
+.nav-brand {
+    color: #fbf6ef;
+    font-weight: bolder;
+    font-size: 2rem;
+}
+.brand-name {
+    color: #a3cef1;
+}
+
+.drop-card {
+    background-color: #a3cef1;
+    /* text-align: center !important; */
+    padding: 1rem;
+    border-radius: 10px;
+    border: 2px solid #fbf6ef;
+    color: black;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.drop-card:hover {
+    transform: scale(1.1);
+}
+a {
+    text-decoration: none;
+    
+}
+small {
+    color: red;
+}
+.footer {
+    color: black;
+    background-color: #6096ba;
+    font-weight: bolder;
+    
+}
+.close-icon {
+    position: absolute;
+    top: 8px;
+    right: 10px;
+    font-size: 1.3rem;
+    color: #274c77;
+    cursor: pointer;
+}
+
+.close-icon:hover {
+    color: darkblue;
+}
+.close-btn{
+    background-color: none;
+    border: none;
+    position: absolute;
+    padding: 0;
+    top: 6px;
+    right: 6px;
+}
+.fa-brands {
+    padding: 8px;
+    font-size: 1.5rem;
+    color: black;
+}
