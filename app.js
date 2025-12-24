@@ -64,6 +64,10 @@ app.post("/compose", function(req, res){
     const dropTitle = req.body.dropTitle;
     const dropDescription = req.body.dropDescription;
     const dropLink = req.body.dropLink;
+
+    if (!dropLink.startsWith("http://") && !dropLink.startsWith("https://")) {
+        dropLink = "https://" + dropLink;
+    }
     
     const newDrop = new dropItem ({
         name: dropTitle,
